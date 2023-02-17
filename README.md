@@ -1,4 +1,4 @@
-## Raster to Polyline conversion
+## Raster to Lines conversion
 
 A simple and efficient script for converting rasters to polyline shapefiles, comparable to the `RasterToPolyline` tool in ArcGIS, or `r.thin` and `r.to.vect` in GRASS GIS, except it only requires GDAL as a dependency.
 
@@ -13,9 +13,9 @@ The thinning algorithm implemented can be found in the following reference ("Alg
 Download this script and make sure it's in your path. Then:
 
 ```
-from RasterToPolyline import RasterToPolyline
+from RasterToLines import RasterToLines as R2L
 
-RasterToPolyline("/path/to/my_raster.tif")
+R2L.RasterToLines("/path/to/my_raster.tif")
 ```
 
 That's all there is to it. I hope someone finds this useful.

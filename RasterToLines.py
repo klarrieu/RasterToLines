@@ -10,7 +10,7 @@ Input raster must have a value of 1 in all cells that will be part of lines
 """
 
 
-class RasterToPolyline(object):
+class RasterToLines(object):
     def __init__(self, ras):
         self.ras = ras
         self.out_shp = 'ras2polyline.shp'
@@ -156,6 +156,6 @@ class RasterToPolyline(object):
 """
 if __name__ == "__main__":
     test_ras = 'log_dinfarea.tif'
-    RasterToPolyline(test_ras)
+    RasterToLines(test_ras)
 """
 
